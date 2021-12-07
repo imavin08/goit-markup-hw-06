@@ -19,6 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Шапка-->
@@ -325,6 +326,25 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-mailing">
+          <p class="footer-mailing-title">Подпишитесь на рассылку</p>
+          <form action="#" class="footer-mailing-form">
+            <label for="input-email"></label>
+            <input
+              id="input-email"
+              name="email"
+              type="email"
+              class="footer-mailling-input"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="footer-mailling-btn">
+              Подписаться
+              <svg class="footer-mailling-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
