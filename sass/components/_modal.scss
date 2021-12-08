@@ -22,14 +22,12 @@
   padding-left: 42px;
   padding-right: 10px;
   outline: none;
-}
-
-.modal-input:focus {
-  border-color: var(--accent);
-}
-
-.modal-input:focus:focus + .modal-icon {
-  fill: var(--accent);
+  &:focus {
+    border-color: var(--accent);
+    + .modal-icon {
+      fill: var(--accent);
+    }
+  }
 }
 
 .modal-form-text {
@@ -43,10 +41,15 @@
   margin-bottom: 20px;
   outline: none;
   cursor: pointer;
-}
-
-.modal-form-text:focus {
-  border-color: var(--accent);
+  &:focus {
+    border-color: var(--accent);
+  }
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .modal-label {
@@ -74,13 +77,6 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: #ffffff;
-}
-
-.modal-form-text::placeholder {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
 }
 
 .input-box {
@@ -128,7 +124,9 @@
   fill: var(--main-title-color);
 }
 
-.modal-policy:checked + .modal-policy-text .policy-check-box {
-  background-color: var(--accent);
-  border: none;
+.modal-policy:checked + .modal-policy-text {
+  .policy-check-box {
+    background-color: var(--accent);
+    border: none;
+  }
 }

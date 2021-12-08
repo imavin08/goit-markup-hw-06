@@ -9,6 +9,10 @@
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
 }
 
 .mail {
@@ -22,6 +26,10 @@
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
 }
 
 .tel {
@@ -33,19 +41,8 @@
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.tel:hover,
-.tel:focus {
-  color: var(--accent);
-}
-
-.mail:hover,
-.mail:focus {
-  color: var(--accent);
-}
-
-.location:hover,
-.location:focus {
-  color: var(--accent);
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
 }

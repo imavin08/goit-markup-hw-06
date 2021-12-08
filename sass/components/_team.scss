@@ -50,10 +50,9 @@
 .ourteam-icon-item {
   width: 44px;
   height: 44px;
-}
-
-.ourteam-icon-item:not(:last-child) {
-  margin-right: 10px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .ourteam-icon-link {
@@ -68,12 +67,11 @@
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.ourteam-icon-link:hover,
-.ourteam-icon-link:focus {
-  background-color: var(--accent);
-  color: #ffffff;
+  &:hover,
+  &:focus {
+    background-color: var(--accent);
+    color: #ffffff;
+  }
 }
 
 .ourteam-icon {
